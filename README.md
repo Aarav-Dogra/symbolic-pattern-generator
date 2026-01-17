@@ -23,12 +23,17 @@ K(a*b) = 6, K(a^b) = 8 and K(a+b+c) = K((a+b)+c) = 4 + K(+c) = 4+3 coz K(+c) is 
 example input & output:
 
 %Run 'under complexity k generator 2.py'
+
 data points (e.g., (1,1),(2,2),(3,3)): (1,0),(-1,0),(0,0),(2,6)
+
 complexity min bound k1: 4
+
 complexity max bound k2: 15
 
 === Streaming matches y = f(x) with K* in [4,15] ===
+
 K*=9: y = ((x ^ 3) - x)
+
 K*=11: y = (((x * x) - 1) * x)
 
 
