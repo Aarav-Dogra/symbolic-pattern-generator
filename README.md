@@ -22,7 +22,7 @@ K(a*b) = 6, K(a^b) = 8 and K(a+b+c) = K((a+b)+c) = 4 + K(+c) = 4+3 coz K(+c) is 
 
 example input & output:
 
->>> %Run 'under complexity k generator 2.py'
+%Run 'under complexity k generator 2.py'
 data points (e.g., (1,1),(2,2),(3,3)): (1,0),(-1,0),(0,0),(2,6)
 complexity min bound k1: 4
 complexity max bound k2: 15
@@ -30,7 +30,7 @@ complexity max bound k2: 15
 === Streaming matches y = f(x) with K* in [4,15] ===
 K*=9: y = ((x ^ 3) - x)
 K*=11: y = (((x * x) - 1) * x)
->>>
+
 
 **Why Should This Work?**
 With addition -> multiplication -> exponentiation, we can analyse many things accurately without the need for special functions. If we choose the least minimum description length (least complexity) patterns for data, we oversimplify instead of overcomplicating things, which is computationally easier. Additionally, Solomonoff induction showed that the optimal predictor weights hypotheses by 2^(-K(h)) for K(h) is the Kolmogorov complexity, which means simpler explanations have exponentially higher prior probability. I have attempted to create a computable version of Kolmogorov complexity by assuming a repition operator & the successor function are just 1 complexity point each. 
